@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://objects/block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://objects/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://objects/player.gd" type="Script" id=3]
+
+[node name="world" type="Node2D"]
+
+[node name="block_container" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="block" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 32, 570 )
+
+[node name="block8" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 280, 570 )
+
+[node name="block17" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 574, 440 )
+
+[node name="block15" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 807.426, 570 )
+
+[node name="block4" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 156, 570 )
+
+[node name="block14" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 450, 440 )
+
+[node name="block12" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 683.426, 570 )
+
+[node name="block7" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 404, 570 )
+
+[node name="block16" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 931.426, 570 )
+
+[node name="block2" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 94, 570 )
+
+[node name="block10" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 621.426, 570 )
+
+[node name="block5" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 342, 570 )
+
+[node name="block13" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 869.426, 570 )
+
+[node name="block3" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 218, 570 )
+
+[node name="block6" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 512, 440 )
+
+[node name="block11" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 745.426, 570 )
+
+[node name="block9" parent="block_container" instance=ExtResource( 1 )]
+position = Vector2( 993.426, 570 )
+
+[node name="player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 187.095, 390.443 )
+script = ExtResource( 3 )
