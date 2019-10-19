@@ -1,29 +1,20 @@
 extends KinematicBody2D
 
 var velocity = Vector2()
-const GRAVITY = -10
-var speed = 200
-var jump_speed = -450
-const out_of_bounds = 700
+
+const JUMP_SPEED = 100
+const ACCLERATION = 10
+const SPEED_CAP = 200
 
 func _physics_process(delta):
-	velocity.y -= GRAVITY
+	velocity.y += 50
 	if Input.is_action_pressed("ui_right"):
-		velocity.x = speed
+		velocity.x = min(velocity.x + ACCLERATION, SPEED_CAP)
 	elif Input.is_action_pressed("ui_left"):
-		velocity.x = -speed
+		velocity.x = min(velocity.x - ACCLERATION, -SPEED_CAP)
 	else:
-		velocity.x = 0
+		#velocity.x = 
 		
-	if is_on_floor():
-		if Input.is_action_just_pressed("ui_up"):
-			print("ready")
-			velocity.y = jump_speed
-		else:
-			velocity.y = 0
-
-
-func _process(delta):
-	if(position.y > out_of_bounds):
-		position = Vector2(510,200)
-	move_and_slide(velocity,Vector2(0,-1))
+	
+	move_and_slide(velocity)
+	pass
