@@ -6,7 +6,6 @@
 extents = Vector2( 30, 30 )
 
 [node name="block" type="StaticBody2D"]
-editor/display_folded = true
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

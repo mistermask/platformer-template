@@ -10,56 +10,56 @@
 editor/display_folded = true
 
 [node name="block" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 32, 570 )
+position = Vector2( 30, 570 )
 
 [node name="block8" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 280, 570 )
+position = Vector2( 270, 570 )
 
 [node name="block17" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 574, 440 )
+position = Vector2( 580, 410 )
 
 [node name="block15" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 807.426, 570 )
+position = Vector2( 820, 570 )
 
 [node name="block4" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 156, 570 )
+position = Vector2( 150, 570 )
 
 [node name="block14" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 450, 440 )
+position = Vector2( 460, 410 )
 
 [node name="block12" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 683.426, 570 )
+position = Vector2( 700, 570 )
 
 [node name="block7" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 404, 570 )
+position = Vector2( 390, 570 )
 
 [node name="block16" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 931.426, 570 )
+position = Vector2( 940, 570 )
 
 [node name="block2" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 94, 570 )
+position = Vector2( 90, 570 )
 
 [node name="block10" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 621.426, 570 )
+position = Vector2( 640, 570 )
 
 [node name="block5" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 342, 570 )
+position = Vector2( 330, 570 )
 
 [node name="block13" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 869.426, 570 )
+position = Vector2( 880, 570 )
 
 [node name="block3" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 218, 570 )
+position = Vector2( 210, 570 )
 
 [node name="block6" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 512, 440 )
+position = Vector2( 520, 410 )
 
 [node name="block11" parent="block_container" instance=ExtResource( 1 )]
-position = Vector2( 745.426, 570 )
+position = Vector2( 760, 570 )
 
 [node name="block9" parent="block_container" instance=ExtResource( 1 )]
 position = Vector2( 993.426, 570 )
 
 [node name="player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 187.095, 390.443 )
+position = Vector2( 510, 290 )
 script = ExtResource( 3 )
