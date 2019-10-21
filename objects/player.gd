@@ -2,10 +2,10 @@ extends KinematicBody2D
 
 var velocity = Vector2()
 
-const JUMP_SPEED = -500
+const JUMP_SPEED = -550
 const ACCLERATION = 30
-const SPEED_CAP = 200
-const GRAVITY = 10
+const SPEED_CAP = 300
+const GRAVITY = 20
 const DEACCLERATION = 60
 const UP = Vector2(0,-1)
 
@@ -14,9 +14,9 @@ var time_since_last_jump = 0
 func _physics_process(delta):
 	velocity.y += GRAVITY
 	if Input.is_action_pressed("ui_right"):
-		velocity.x = max(velocity.x + ACCLERATION, SPEED_CAP)
+		velocity.x = min(velocity.x + ACCLERATION, SPEED_CAP)
 	elif Input.is_action_pressed("ui_left"):
-		velocity.x = min(velocity.x - ACCLERATION, -SPEED_CAP)
+		velocity.x = max(velocity.x - ACCLERATION, -SPEED_CAP)
 	else:
 		if velocity.x > 0:
 			velocity.x = max(velocity.x - DEACCLERATION, 0)
@@ -29,5 +29,6 @@ func _physics_process(delta):
 			time_since_last_jump = .3
 	
 	velocity = move_and_slide(velocity,UP)
+	print(velocity)
 	time_since_last_jump -= delta
 	pass
